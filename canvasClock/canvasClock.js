@@ -142,9 +142,9 @@ function ball(k, i, j) {
     var ball = {
         x: 25 * (j + 1) + weizhi[k],
         y: 25 * (i + 1),
-        g: 1.5 + Math.random(),
-        vx: Math.pow(-1, Math.ceil(Math.random() * 2)) * 5,
-        vy: -5 + Math.random(),
+        g: .5 + Math.random(),
+        vx: Math.pow(-1, Math.ceil(Math.random() * 2)) * 2,
+        vy: -5 + Math.random() * 2,
         color: 'rgb(' + Math.floor(Math.random() * 255) + ',' + Math.floor(Math.random() * 255) + ',' + Math.floor(Math.random() * 255) + ')'
     }
     return ball
@@ -199,7 +199,7 @@ function goboomballs() {
         boomballs[i].vy += boomballs[i].g
         if (boomballs[i].y >= context.canvas.height - 10) {
             boomballs[i].y = context.canvas.height - 10
-            boomballs[i].vy = -boomballs[i].vy * 0.6
+            boomballs[i].vy = -boomballs[i].vy * 0.7
         }
         if (boomballs[i].x < 0 || boomballs[i].x > context.canvas.width) {
             boomballs.splice(i, 1)
@@ -240,4 +240,4 @@ function update() {
 }
 
 //更新
-setInterval(update, 50)
+setInterval(update, 16.7)
