@@ -60,7 +60,7 @@ function updata() {
 function velocity() {
     x = thewidth * 0.2
     y = y + g
-    g = g + 0.2
+    g = g + 0.1
     bolls = []
     bolls.push({
         x,
