@@ -41,7 +41,7 @@ function jieshu() {
 }
 
 c.onclick = function () {
-    g = -6
+    g = -9
 }
 
 // 更新数据
