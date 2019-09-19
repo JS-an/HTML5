@@ -41,7 +41,7 @@ function jieshu() {
 }
 
 c.onclick = function () {
-    g = -9
+    g = -6
 }
 
 // 更新数据
@@ -60,7 +60,7 @@ function updata() {
 function velocity() {
     x = thewidth * 0.2
     y = y + g
-    g = g + 0.25
+    g = g + 0.1
     bolls = []
     bolls.push({
         x,
